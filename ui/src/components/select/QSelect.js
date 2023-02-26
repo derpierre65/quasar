@@ -414,6 +414,10 @@ export default createComponent({
       return evt
     })
 
+    watch(() => props.modelValue, (value) => {
+      updateInputValue(value)
+    })
+
     watch(innerValue, val => {
       innerValueCache = val
 
