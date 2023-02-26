@@ -155,7 +155,7 @@ export default function (state) {
           ? ('' + props.modelValue).length
           : (Array.isArray(props.modelValue) === true ? props.modelValue.length : 0)
 
-        const max = props.maxlength !== void 0
+        const max = props.maxlength !== void 0 && props.maxValues === void 0
           ? props.maxlength
           : props.maxValues
 
